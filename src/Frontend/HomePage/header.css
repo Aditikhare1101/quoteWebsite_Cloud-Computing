@@ -1,0 +1,90 @@
+.headerimg{
+    width: 100%;
+    height: auto; 
+    border-radius: 8px; 
+    border: 2px solid #ccc;     
+    transition: transform 0.3s ease;
+    opacity: 1;
+    margin-top: 10%;
+    object-fit: cover;
+}
+
+.headertitles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Dancing Script", system-ui;
+    color: #444;
+}
+
+.headertitlesmaller{
+    position: absolute;
+    top: 15%;
+    left: 252px;
+    text-align: center;
+    align-items: center;
+    font-size: 23px;
+    color:rgb(0, 0, 0);
+    font-weight: 900;
+}
+
+.headertitlebigger{
+    position: absolute;
+    font-style: 500px;
+    font-weight:1000;
+    top: 25%;
+    font-size: 56px;
+    color:burlywood;
+}
+
+.headertitlebiggerabove{
+    position: absolute;
+    font-style: 500px;
+    font-weight:1000;
+    top: 25.5%;
+    font-size: 56px;
+    font-weight: 9000;
+    color:black;
+    /* position: relative; */
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: floatIn 2s ease-out forwards;
+}
+
+
+@keyframes floatIn {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+.insideImg{
+    position: absolute;
+    width: 350px;
+    height: auto;
+    top:255px;
+    left:5%;
+    box-shadow: 0 4px 8px rgb(170, 111, 65); 
+}
+
+.insideImgText{
+    position: absolute;
+    font-style: 500px;
+    font-weight:1000;
+    top: 95%;
+    left: 2%;
+    font-size: 26px;
+    color:burlywood;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1); 
+}
+
+.Name{
+    position: absolute;
+    left: 60%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1); 
+}

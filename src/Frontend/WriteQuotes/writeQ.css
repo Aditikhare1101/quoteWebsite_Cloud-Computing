@@ -1,0 +1,125 @@
+.writeQ{
+    padding-top: 50px;
+}
+
+.writeImg{
+    margin-left: 50px;
+    width: 90vw;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1); 
+}
+
+.writeForm{
+    position: relative;
+}
+
+.writeFromGroup{
+    margin-left: 150px;
+    display: flex;
+    align-items: center;
+}
+
+.fontSelect{
+    display: flex;
+    font-family: "Caveat", system-ui;
+    font-size: 25px;
+    border-radius: 10px;
+    border-color: rgb(131, 0, 254);
+    background-color: #a696be;
+    padding: 2px;
+    width: 430px;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgb(149, 106, 188); 
+}
+
+.dropdown{
+    padding: 10px;
+    margin-left: 130px;
+}
+
+.writeIcon{
+    margin-left: -29.5px;
+    margin-top:45px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color:burlywood;
+    cursor: pointer;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 1); 
+}
+
+.writeInput{
+    /* margin-top: 20px; */
+    top: 20px;
+    font-size: 23px;
+    color: black;
+    border: none;
+    padding: 20px;
+    width: 70vw;
+    background-image: url("D:\react-project\quote-website\public\assests\inputimg.jpg");    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1); 
+}
+
+.writeInput:focus{
+    outline: none;
+}
+
+.writeText{
+    font-size: 20px;
+    height: 100vw;
+}
+
+.writeButton{
+    position: absolute;
+    top: 80px;
+    right: 50px;
+    color:rgb(255, 255, 255);
+    background-color: burlywood;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1); 
+
+}
+
+.writeButton:hover{
+    background-color: black;
+    color: burlywood;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1); 
+}
+
+.writeButtonB{
+    display: flex;
+    bottom: 50px;
+    right: 50px;
+    position: absolute;
+    color:rgb(255, 255, 255);
+    background-color: burlywood;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1); 
+}
+
+.writeButtonB:hover{
+    background-color: black;
+    color: burlywood;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1); 
+}
+

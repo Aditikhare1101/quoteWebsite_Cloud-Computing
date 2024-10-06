@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+Reference - YT - https://www.youtube.com/watch?v=tlTdbc5byAs
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+use this for writing font :  font-family: "Pacifico", system-ui;
+                             font-family: "Dancing Script", system-ui;
+                             font-family: "Caveat", system-ui;
 
-## Available Scripts
 
-In the project directory, you can run:
+*WHY WE ARE USING jsx INSTEAD OF js*
+-> Because JS is simply a scripting language, adding functionality into a website. JSX is an addition to the JavaScript syntax which is a mixture of both HTML and JavaScript. 
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+*Steps to create this project:*
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+*1*: Create react project - npx create-react-app project-name
+*2*: Install npm - npm install
+*3*: Choose the google fonts accordingly and add their link into the '/public/index.html'.
+*4*: Add font awesome file link from 'font-awesome library' website into the '/public/index.html'.
+*5*: Install yarn add react-router-dom or npm install react-router-dom@latest
+*6*: LogIn into your AWS account
+*7*: Create RDS db
+    *7.1*: select public access, and make sure the db name is same to the username else it will create a confusion.
+    *7.2*: download mysql workbench, and then click on + sign, and username, hostname as your endpoint, you will get that by clicking on the RDS db, and then enter your password same as your RDS db password.
+    *7.3*: if facing an error then check the inbound rule, if mysql is there or not, if not add add it and in that select it after that select myip and enter your ip, and here you go.
+    *7.4*: create your tables now but at start mention "use your_RDS_db_name;"
+*8*: Create S3 bucket in the same region as your RDS db.
+*9*: Create a server which will hold your website.
+    *9.1*: create an instance using EC2. Launch your instance.
+    *9.2*: open GitBash or cmd, cd your_.pem(key_pair_file)location, then enter this command to connect the server:
+            "ssh -i "your_keyPair_fileName.pem" your_instance_Public_DNS".
+    *9.3*: then update sudo using this command: "sudo yum update -y"
+    *9.4*: give premission "chmod 400 "your_.pem(key_pair_file)location"
+    *9.5*: then install mysql "sudo yum install mysql -y, if you face any error while installing the mysql, then check if the mysql is persent in your system or not using this command: "rpm -qa | grep mysql" and "sudo rpm -Uvh your_mysql_community"
+           and "sudo wget https://dev.mysql.com/get/mysql80-community-release-el9-1.noarch.rpm", and "sudo wget https://dev.mysql.com/get/mysql80-community-release-el9-1.noarch.rpm" and "sudo rpm -Uvh mysql80-community-release-el9-1.noarch.rpm" and "sudo yum clean all"
+           and "sudo yum install mysql-server -y"
+    *9.6*:  then enter this "sudo yum clean all", "sudo yum install mysql-server -y"
+    *9.7*: now try to connect with the RDS using this command: "mysql -h "your_endpoint" -u db_username -p" hit the enter button and enter_your_password.
+    *9.8*: if you face an error then "sudo yum update -y", "sudo yum install mysql -y", "sudo yum install mysql -y", follow the step 9.7.
+    *9.9*: create database and tables as per your requirement.
+*10*: inside the backend folder, install "npm init -y", "npm install express mysql cors nodemon", and then in the package.json, inside script add "start": "nodemon server.js", before this create a file name server.js
+*11*: 
 
-### `npm test`
+=JIv;fDQaIimu.qGjLkWoDYZRAwv9yoW
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+footer, logo, db connectivity, - yet to do.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

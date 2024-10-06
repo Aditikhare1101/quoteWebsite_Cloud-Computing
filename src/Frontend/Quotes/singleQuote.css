@@ -1,0 +1,62 @@
+.singleQuote{
+    flex: 9;
+}
+
+.singleQuoteWrapper{
+    padding: 20px;
+    padding-right: 0px;
+}
+
+.singleQuoteImg{
+    width: 98.5%;
+    height: 700px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.singleQuoteTitle{
+    text-align: center;
+    margin: 10Px;
+    font-family: "Playwrite DE Grund", system-ui;
+}
+
+.singleEditContent{
+    float: right;
+    font-size: 20px;
+}
+
+.singleQuoteIcons{
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.singleQuoteIcons:first-child{
+    color: teal;
+}
+
+.singleQuoteIcons:last-child{
+    color: tomato;
+}
+
+.singleQuoteInfo{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    color: rgb(227, 87, 134);
+    font-family: "Playwrite DE Grund", system-ui;
+}
+
+.signleQuoteDescription{
+    font-family: "Fredoka", system-ui;
+    font-size: 15px;
+    line-height: 25px;
+    color: rgb(72, 47, 147);
+}
+
+.signleQuoteDescription::first-letter{
+    margin-left: 20px;
+    font-size: 30px;
+    min-width: 600px;
+    font-weight: 600px;
+}

@@ -1,0 +1,52 @@
+.post{
+    width: 385px; 
+    margin: 0px 25px 40px 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.postimg{
+     width: 450px;
+     height: 400px;
+     object-fit: cover;
+     border-radius: 7px;
+}
+
+.postInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.postCategories{
+    font-family: "Pacifico", system-ui;
+    font-size: 21px;
+    line-height: 12px;
+    margin-top: 17px;
+    margin-right: 10px;
+    cursor: pointer;
+    color: crimson;
+    padding: 5px;
+}
+
+.postTitle{
+    margin-top: 28px;
+    font-family: "Fredoka", system-ui;
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+.postDate{
+    font-family: "Playwrite DE Grund", system-ui;
+    font-style: italic;
+    font-size: 13px;
+    color: rgb(104, 103, 103);
+}
+
+.likeButton{
+    background-color: white;
+    border-style: none;
+    margin-top: 10px;
+    color: #c40f0f;
+}
