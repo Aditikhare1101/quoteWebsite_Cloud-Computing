@@ -1,5 +1,3 @@
-Reference - YT - https://www.youtube.com/watch?v=tlTdbc5byAs
-
 use this for writing font :  font-family: "Pacifico", system-ui;
                              font-family: "Dancing Script", system-ui;
                              font-family: "Caveat", system-ui;
@@ -62,10 +60,4 @@ use this for writing font :  font-family: "Pacifico", system-ui;
 
 *11*: 
 
-=JIv;fDQaIimu.qGjLkWoDYZRAwv9yoW
-
-
-
-
-footer, logo, db connectivity, - yet to do.
 
